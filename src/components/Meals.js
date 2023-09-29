@@ -1,7 +1,11 @@
 import React from 'react'
 
-export const Meals = () => {
-  return (
-    <div>Meals</div>
-  )
+import {useGlobalContext} from '../context';
+
+const Meals = () => {
+  const context = useGlobalContext()
+  return <h1>Meals Component</h1>
 }
+
+export default Meals
+
